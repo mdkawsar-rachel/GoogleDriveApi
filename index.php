@@ -8,11 +8,12 @@
 </head>
 <body>
   <?php
-    if (isset($_SESSION['message']) && $_SESSION['message'])
+   /* if (isset($_SESSION['message']) && $_SESSION['message'])
     {
       echo '<p class="notification">'.$_SESSION['message']).'</p>';
       unset($_SESSION['message']);
     }
+    */
   ?>
   <form method="POST" action="upload.php" enctype="multipart/form-data">
     <div class="upload-wrapper">
