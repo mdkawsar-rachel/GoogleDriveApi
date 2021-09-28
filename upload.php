@@ -4,7 +4,7 @@
 include './GoogleDriveApi.php';
 $api = new GoogleDriveApi('./credentials.json');
 
-session_start();
+//session_start();
 
 $message = ''; 
 if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
@@ -37,5 +37,5 @@ if (isset($_POST['uploadBtn']) && $_POST['uploadBtn'] == 'Upload')
     $message .= 'Error:' . $_FILES['uploadedFile']['error'];
   }
 }
-$_SESSION['message'] = $message;
+// $_SESSION['message'] = $message;
 //header("Location: index.php");
